@@ -7,7 +7,7 @@ import gsap from "gsap";
 import { Eye, EyeOff, AlertCircle, Loader2, ArrowRight, Check, ChevronLeft } from "lucide-react";
 import { ImageWithFallback } from "../../../components/figma/ImageWithFallback";
 import { SERIF, SERIF_SWASH, EASE, GOLD, INK } from "../../../components/ui/editorial";
-import teslaImg from "../../assets/e953bdff71ac66fb2394a9af776da021bd8fdac3.png";
+import teslaImg from "../../../../assets/e953bdff71ac66fb2394a9af776da021bd8fdac3.png";
 
 const P = "/v4";
 

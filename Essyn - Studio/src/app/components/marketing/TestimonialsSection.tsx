@@ -13,7 +13,7 @@
  */
 import { useRef, useEffect } from "react";
 import { GR, SERIF } from "../../components/ui/editorial";
-import philosophersImg from "../../assets/0fae4e547ef401d33fc93a24c6989b099b4ad8ca.png";
+import philosophersImg from "../../../assets/0fae4e547ef401d33fc93a24c6989b099b4ad8ca.png";
 
 interface Testimonial {
   name: string;

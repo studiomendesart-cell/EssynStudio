@@ -55,7 +55,7 @@ const SURFACE_BASE = "#FFFFFF";
 const SURFACE_ALT = "#F5F5F7"; // neutral light gray
 
 /* ── Hero Renaissance painting ── */
-import heroRenaissance from "../../assets/9f1eeb9113a04441720c94aa7af00f5fe811b3ff.png";
+import heroRenaissance from "../../../../assets/9f1eeb9113a04441720c94aa7af00f5fe811b3ff.png";
 
 /* ── before/after ── */
 const beforeTools = [
