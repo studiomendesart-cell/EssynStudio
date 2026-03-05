@@ -1,3 +1,4 @@
+import { SidebarProvider } from "./ui/sidebar";
 /**
  * AppLayout — Root wrapper for authenticated app routes.
  *
@@ -99,6 +100,7 @@ function AppContent() {
           width: "100%",
         }}
       >
+        <SidebarProvider>
         <AppShell
           collapsed={collapsed}
           onToggle={() => setCollapsed(!collapsed)}
@@ -114,6 +116,7 @@ function AppContent() {
         >
           <Outlet />
         </AppShell>
+        </SidebarProvider>
       </div>
       <MaiaPanel />
       <MaiaFocusChatWrapper />
