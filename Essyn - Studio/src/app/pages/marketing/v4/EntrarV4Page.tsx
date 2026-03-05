@@ -7,7 +7,7 @@ import gsap from "gsap";
 import { Eye, EyeOff, AlertCircle, Loader2, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "../../../components/figma/ImageWithFallback";
 import { SERIF, EASE, GOLD } from "../../../components/ui/editorial";
-import heroRenaissance from "figma:asset/e7f46b7d315e7cdf071580dadff840c13a62757d.png";
+import heroRenaissance from "../../assets/e7f46b7d315e7cdf071580dadff840c13a62757d.png";
 
 const P = "/v4";
 const serif = SERIF;
