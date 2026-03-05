@@ -2,7 +2,7 @@ import { useState, useCallback, type ReactNode } from "react";
 import { useNavigate, useLocation } from "react-router";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
+import { Sidebar } from "./sidebar";
 import { Topbar } from "./Topbar";
 import { ContentSlot } from "./ContentSlot";
 import { DISPLAY } from "./editorial";
@@ -12,7 +12,7 @@ import { navigateToProject, type ProjetoTab } from "../../lib/navigation";
 import { projetos } from "../projetos/projetosData";
 import { useIsMobile } from "./use-mobile";
 import { useDk } from "../../lib/useDarkColors";
-import type { SidebarSection } from "./Sidebar";
+import type { SidebarSection } from "./sidebar";
 import type { TopbarBreadcrumb, TopbarCta, TopbarAvatar } from "./Topbar";
 
 /* ─── Types ─── */

@@ -17,7 +17,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import type { ReactNode } from "react";
-import type { SidebarSection } from "./Sidebar";
+import type { SidebarSection } from "./sidebar";
 import type { NavItemState } from "./NavItem";
 import { defaultFeatureRegistry } from "./paywall-provider";
 
