@@ -1,20 +1,20 @@
 import {
-  LayoutDashboard,
-  Clapperboard,
+  Gauge,
+  Aperture,
   CalendarDays,
   Images,
   FolderKanban,
-  DollarSign,
-  Users,
-  Settings,
-  Contact,
+  Wallet,
+  UserRoundSearch,
+  SlidersHorizontal,
+  UserCheck,
   UsersRound,
   ShoppingBag,
   BarChart3,
-  FileText,
+  FileSignature,
   Zap,
   Link2,
-  MessageCircle,
+  MessageCircleMore,
 } from "lucide-react";
 import type { ReactNode } from "react";
 import type { SidebarSection } from "./sidebar";
@@ -60,14 +60,14 @@ interface ModuleDef {
 
 const moduleDefs: ModuleDef[] = [
   {
-    icon: <LayoutDashboard className="w-[18px] h-[18px]" />,
+    icon: <Gauge className="w-[18px] h-[18px]" />,
     label: "Dashboard",
     module: "dashboard",
     route: "/dashboard",
     section: "OPERAÇÃO",
   },
   {
-    icon: <Clapperboard className="w-[18px] h-[18px]" />,
+    icon: <Aperture className="w-[18px] h-[18px]" />,
     label: "Produção",
     module: "producao",
     route: "/producao",
@@ -98,7 +98,7 @@ const moduleDefs: ModuleDef[] = [
     paywallFeatureKey: "pedidos",
   },
   {
-    icon: <MessageCircle className="w-[18px] h-[18px]" />,
+    icon: <MessageCircleMore className="w-[18px] h-[18px]" />,
     label: "WhatsApp",
     module: "whatsapp",
     route: "/whatsapp",
@@ -113,7 +113,7 @@ const moduleDefs: ModuleDef[] = [
     defaultBadge: 10,
   },
   {
-    icon: <DollarSign className="w-[18px] h-[18px]" />,
+    icon: <Wallet className="w-[18px] h-[18px]" />,
     label: "Financeiro",
     module: "financeiro",
     route: "/financeiro",
@@ -121,7 +121,7 @@ const moduleDefs: ModuleDef[] = [
     paywallFeatureKey: "financeiro",
   },
   {
-    icon: <Users className="w-[18px] h-[18px]" />,
+    icon: <UserRoundSearch className="w-[18px] h-[18px]" />,
     label: "CRM",
     module: "crm",
     route: "/crm",
@@ -129,7 +129,7 @@ const moduleDefs: ModuleDef[] = [
     paywallFeatureKey: "crm",
   },
   {
-    icon: <Contact className="w-[18px] h-[18px]" />,
+    icon: <UserCheck className="w-[18px] h-[18px]" />,
     label: "Clientes",
     module: "clientes",
     route: "/clientes",
@@ -153,7 +153,7 @@ const moduleDefs: ModuleDef[] = [
     paywallFeatureKey: "relatorios",
   },
   {
-    icon: <FileText className="w-[18px] h-[18px]" />,
+    icon: <FileSignature className="w-[18px] h-[18px]" />,
     label: "Contratos",
     module: "contratos",
     route: "/contratos",
@@ -175,7 +175,7 @@ const moduleDefs: ModuleDef[] = [
     section: "SISTEMA",
   },
   {
-    icon: <Settings className="w-[18px] h-[18px]" />,
+    icon: <SlidersHorizontal className="w-[18px] h-[18px]" />,
     label: "Configurações",
     module: "configuracoes",
     route: "/configuracoes",

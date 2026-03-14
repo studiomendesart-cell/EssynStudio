@@ -31,9 +31,9 @@
  */
 import { useState, useRef, useEffect, useCallback, useMemo, createContext, useContext } from "react";
 import {
-  ArrowLeft, Send, Sparkles, BarChart3, Calendar, Clapperboard,
-  DollarSign, FolderKanban, Images, Layers, Users, Command,
-  FileText, TrendingUp, ClipboardList, UserCheck,
+  ArrowLeft, Send, Sparkles, Gauge, Calendar, Aperture,
+  Wallet, FolderKanban, Images, PackageCheck, UserRoundSearch, Command,
+  FileSignature, TrendingUp, ClipboardList, UserCheck,
   Moon, Sun,
   type LucideIcon,
 } from "lucide-react";
@@ -72,20 +72,20 @@ interface InlineMsg {
 }
 
 const moduleTiles: ModuleTile[] = [
-  { id: "dashboard", label: "Visao Geral", desc: "Resumo do estudio", icon: BarChart3, route: "/dashboard", preview: "4 alertas" },
-  { id: "producao", label: "Producao", desc: "Fila de trabalho", icon: Clapperboard, route: "/producao", preview: "3 pendentes" },
-  { id: "financeiro", label: "Financeiro", desc: "Receitas e cobrancas", icon: DollarSign, route: "/financeiro", preview: "R$ 5.2k" },
+  { id: "dashboard", label: "Visao Geral", desc: "Resumo do estudio", icon: Gauge, route: "/dashboard", preview: "4 alertas" },
+  { id: "producao", label: "Producao", desc: "Fila de trabalho", icon: Aperture, route: "/producao", preview: "3 pendentes" },
+  { id: "financeiro", label: "Financeiro", desc: "Receitas e cobrancas", icon: Wallet, route: "/financeiro", preview: "R$ 5.2k" },
   { id: "agenda", label: "Agenda", desc: "Eventos e reunioes", icon: Calendar, route: "/agenda", preview: "2 eventos" },
   { id: "galeria", label: "Galeria", desc: "Entregas e selecoes", icon: Images, route: "/galeria", preview: "148 fotos" },
   { id: "projetos", label: "Projetos", desc: "Contratos e prazos", icon: FolderKanban, route: "/projetos", preview: "7 ativos" },
-  { id: "crm", label: "CRM", desc: "Leads e pipeline", icon: Users, route: "/crm", preview: "12 leads" },
-  { id: "entregas", label: "Entregas", desc: "Prazos e pendencias", icon: Layers, route: "/producao", preview: "5 prazos" },
+  { id: "crm", label: "CRM", desc: "Leads e pipeline", icon: UserRoundSearch, route: "/crm", preview: "12 leads" },
+  { id: "entregas", label: "Entregas", desc: "Prazos e pendencias", icon: PackageCheck, route: "/producao", preview: "5 prazos" },
 ];
 
 const quickPrompts = [
-  { text: "Quanto tenho a receber este mes?", icon: DollarSign },
+  { text: "Quanto tenho a receber este mes?", icon: Wallet },
   { text: "Quais trabalhos estao atrasados?", icon: Clapperboard },
-  { text: "Resumo geral do estudio", icon: BarChart3 },
+  { text: "Resumo geral do estudio", icon: Gauge },
   { text: "O que tenho pra hoje?", icon: Calendar },
 ];
 
@@ -158,11 +158,11 @@ interface SlashCmd {
 const slashCommands: SlashCmd[] = [
   { cmd: "/briefing", label: "Briefing", desc: "Gera briefing pre-evento completo", icon: FileText },
   { cmd: "/forecast", label: "Forecast", desc: "Previsao de faturamento 3 meses", icon: TrendingUp },
-  { cmd: "/relatorio", label: "Relatorio", desc: "Relatorio completo do estudio", icon: BarChart3 },
-  { cmd: "/cobrar", label: "Cobrancas", desc: "Lista todas as cobrancas pendentes", icon: DollarSign },
+  { cmd: "/relatorio", label: "Relatorio", desc: "Relatorio completo do estudio", icon: Gauge },
+  { cmd: "/cobrar", label: "Cobrancas", desc: "Lista todas as cobrancas pendentes", icon: Wallet },
   { cmd: "/equipe", label: "Equipe", desc: "Distribuicao de carga da equipe", icon: UserCheck },
   { cmd: "/entregas", label: "Entregas", desc: "Proximas entregas e prazos", icon: ClipboardList },
-  { cmd: "/pipeline", label: "Pipeline", desc: "Resumo do pipeline de leads", icon: Users },
+  { cmd: "/pipeline", label: "Pipeline", desc: "Resumo do pipeline de leads", icon: UserRoundSearch },
   { cmd: "/kpi", label: "KPIs", desc: "KPIs do mes atual com comparativo", icon: TrendingUp },
   { cmd: "/atrasados", label: "Atrasados", desc: "Tudo que esta atrasado", icon: Calendar },
   { cmd: "/galeria", label: "Galeria", desc: "Status das galerias e entregas", icon: Images },
